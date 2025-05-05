@@ -730,6 +730,7 @@ a:focus {
           flex-direction: column;
   margin: 15px;
   align-items: center;
+  
 }
 .client_section .box >div{
   width: 60%;
@@ -790,7 +791,9 @@ a:focus {
   padding: 75px 25px 25px 25px;
   width: 100%;
 }
-
+.client_section .box{
+  height: 340px;
+}
 .client_section .box .detail-box i {
   color: #00204a;
   margin-bottom: 10px;

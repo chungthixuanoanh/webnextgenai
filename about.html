@@ -109,9 +109,9 @@
             <p>
               With a commitment to <strong>innovation, reliability, and user satisfaction,</strong> we aim to shape the future of mobile technology by creating solutions that empower individuals and businesses alike. From concept to execution, we strive for <strong>excellence in every line of code and every user interaction.
             </p>
-            <a href="">
+            <!-- <a href="">
               Read More
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -246,6 +246,28 @@
   </script>
   <!-- End Google Map -->
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const carouselInner = document.querySelector(".carousel-inner");
+      const items = document.querySelectorAll(".carousel-item");
+  
+      let maxHeight = 0;
+  
+      // Tạm thời hiển thị tất cả các item để đo chiều cao
+      items.forEach(item => {
+        item.classList.add("d-block"); // override d-none tạm thời nếu có
+        const height = item.offsetHeight;
+        if (height > maxHeight) {
+          maxHeight = height;
+        }
+        item.classList.remove("d-block");
+      });
+  
+      // Set chiều cao cố định cho carousel-inner
+      carouselInner.style.height = maxHeight + "px";
+    });
+  </script>
+  
 </body>
 
 </html>

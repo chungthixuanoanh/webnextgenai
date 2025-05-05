@@ -53,6 +53,9 @@
   .footer_link {
     width: 100%;
   }
+  .client_section .box{
+    height: 370px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -103,6 +106,9 @@
   .header_section .container-fluid {
     padding: 0px;
   }
+  .client_section .box{
+    height: 400px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -115,7 +121,11 @@
   }
 }
 
-@media (max-width: 376px) {}
+@media (max-width: 376px) {
+  .client_section .box{
+    height: 100%;
+  }
+}
 
 @media (min-width: 1200px) {
   .container {
