@@ -122,3 +122,8 @@
     max-width: 1170px;
   }
 }
+@media (max-width:1200px) {
+    .about_section .img-about img{
+    max-width: 100%;
+  }
+}

@@ -61,7 +61,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html"> About</a>
@@ -92,7 +92,7 @@
       <div class="carousel-wrap ">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item">
                 <div class="item d-block">
                   <div class="box">
                     <div>
@@ -119,8 +119,8 @@
                 </div>
               
             </div>
-            <div class="carousel-item">
-                <div class="item" alt="Second slide">
+            <div class="carousel-item active">
+                <div class="item">
                   <div class="box">
                     <div>
                       <div class="img-box">
@@ -144,8 +144,29 @@
                     </div>
                   </div>
                 </div>
-
             </div>
+            <div class="carousel-item">
+                  <div class="item">
+                    <div class="box">
+                      <div>
+                        <div class="img-box">
+                          <img src="images/anitique/iconapp_anitique2.png" alt="" class="box-img">
+                        </div>
+                        <div class="detail-box">
+                          <div class="client_id">
+                            <div class="client_info">
+                              <h6>
+                                Curio Value Antique Identifier
+                              </h6>
+                            </div>
+                          </div>
+                          <p class="apps-txt-content">
+                            Curio Value Antique Identifier is the ultimate app for antique lovers, offering instant identification and accurate value estimates for vintage items using powerful AI and historical data. </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="icon-prev" aria-hidden="true"></span>
@@ -288,6 +309,17 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+  <!-- fixed slide Our Apps -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var carouselElement = document.querySelector('#carouselExampleControls');
+    var carousel = new bootstrap.Carousel(carouselElement, {
+      interval: 5000,
+      ride: 'carousel'
+    });
+  });
+</script>
+
 
 </body>
 
